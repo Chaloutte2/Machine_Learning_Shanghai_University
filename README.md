@@ -1,51 +1,81 @@
 # Machine_Learning_Shanghai_University
-# 🚀 Machine Learning & NLP Projects
+# 📊 Machine Learning - Sentiment Analysis Project
 
-<div align="center">
+## 🚀 Objective
+This project builds a simple sentiment analysis model that classifies movie reviews:
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
-![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange?style=for-the-badge)
-![NLP](https://img.shields.io/badge/NLP-Sentiment_Analysis-green?style=for-the-badge)
-![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub_Actions-black?style=for-the-badge&logo=githubactions)
+- 👍 **1 = Positive**
+- 👎 **0 = Negative**
 
-Practical Machine Learning and Natural Language Processing projects developed during university exercises and personal experimentation.
-
-</div>
+The goal is to learn how to apply classical Machine Learning techniques to NLP tasks.
 
 ---
 
-# 📚 Projects
-
-## 🎬 Sentiment Analysis with Transformers
-
-Comparison of multiple NLP Transformer models:
-
-- DistilBERT
-- RoBERTa
-- BERT SST-2
-
-### Features
-✔️ Sentiment prediction  
-✔️ Model comparison  
-✔️ Accuracy evaluation  
-✔️ Binary classification  
+## 🧠 Models Used
+- TF-IDF (Text feature extraction)
+- Logistic Regression (Classification model)
 
 ---
 
-## 📈 Logistic Regression for Sentiment Classification
+## 📂 Dataset
+We use a balanced IMDb dataset containing **10,000 movie reviews**.
 
-Machine Learning pipeline using:
+Each review is labeled as:
+- `0` → Negative review  
+- `1` → Positive review  
 
-- TF-IDF Vectorization
-- Logistic Regression
+---
 
-### Workflow
+## ⚙️ Pipeline Overview
 
-```text
-Text Reviews
-     ↓
-TF-IDF Features
-     ↓
-Logistic Regression
-     ↓
-Sentiment Prediction
+1. Load dataset  
+2. Split into training and testing sets  
+3. Convert text into numerical features using TF-IDF  
+4. Train Logistic Regression model  
+5. Make predictions  
+6. Evaluate performance  
+7. Analyze most important words  
+
+---
+
+## 📈 Results
+
+The model achieves around:
+
+> 🎯 **88% accuracy**
+
+This shows that even simple models can perform well on sentiment classification tasks.
+
+---
+
+## 💬 Example Predictions
+
+- `"This movie was amazing and unforgettable"` → 👍 Positive  
+- `"This was a terrible boring film"` → 👎 Negative  
+- `"The movie was okay but too long"` → 👎 Negative  
+
+---
+
+## 🔥 Most Important Words
+
+### Positive words:
+`great`, `excellent`, `amazing`, `perfect`, `love`, `wonderful`
+
+### Negative words:
+`worst`, `bad`, `boring`, `awful`, `terrible`, `waste`
+
+---
+
+## 🛠️ Tech Stack
+- Python 🐍
+- Pandas
+- NumPy
+- Scikit-learn
+
+---
+
+## 📌 Summary
+This project demonstrates a full NLP pipeline using classical Machine Learning:
+from raw text → vectorization → model training → prediction → evaluation.
+
+---
