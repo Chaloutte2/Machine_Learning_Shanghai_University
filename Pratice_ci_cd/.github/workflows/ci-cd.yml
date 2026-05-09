@@ -2,18 +2,17 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  train:
+  build:
     runs-on: ubuntu-latest
 
     permissions:
       contents: write
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -25,18 +24,19 @@ jobs:
         run: |
           pip install pandas scikit-learn joblib
 
-      - name: Train model
-        run: python train_model.py
-
-      - name: Create release file
+      - name: Train model (in Practice folder)
         run: |
-          mkdir output
-          mv linear_model.pkl output/
+          cd Practice_ci_cd
+          python train_model.py
 
-      - name: Create GitHub Release
+      - name: Move model to root
+        run: |
+          mv Practice_ci_cd/linear_model.pkl .
+
+      - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ github.run_number }}
-          files: output/linear_model.pkl
+          files: linear_model.pkl
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
