@@ -1,78 +1,31 @@
 # Machine_Learning_Shanghai_University
-# 📊 Machine Learning - Sentiment Analysis Project
+# 🤖 Machine Learning 
 
-## 🚀 Objective
-This project builds a simple sentiment analysis model that classifies movie reviews:
+## 📚 Overview
 
-- 👍 **1 = Positive**
-- 👎 **0 = Negative**
+This repository contains multiple **Machine Learning and NLP projects** developed as part of academic practice at Shanghai University.
 
-The goal is to learn how to apply classical Machine Learning techniques to NLP tasks.
+The main focus is **Sentiment Analysis on movie reviews**, comparing:
 
----
-
-## 🧠 Models Used
-- TF-IDF (Text feature extraction)
-- Logistic Regression (Classification model)
+- Classical Machine Learning approaches (TF-IDF + Logistic Regression)
+- Deep Learning / Transformer models (BERT, RoBERTa, DistilBERT)
+- Model evaluation and comparison
 
 ---
 
-## 📂 Dataset
-We use a balanced IMDb dataset containing **10,000 movie reviews**.
+## 🎯 Project Goals
 
-Each review is labeled as:
-- `0` → Negative review  
-- `1` → Positive review  
-
----
-
-## ⚙️ Pipeline Overview
-
-1. Load dataset  
-2. Split into training and testing sets  
-3. Convert text into numerical features using TF-IDF  
-4. Train Logistic Regression model  
-5. Make predictions  
-6. Evaluate performance  
-7. Analyze most important words  
+- Learn how to process and clean text data
+- Build classical NLP pipelines
+- Train and evaluate ML models
+- Use Transformer models for sentiment classification
+- Compare performance between different approaches
+- Understand real-world ML workflows
 
 ---
 
-## 📈 Results
+## 📂 Repository Structure
 
-The model achieves around:
-
-> 🎯 **88% accuracy**
-
-This shows that even simple models can perform well on sentiment classification tasks.
-
----
-
-## 💬 Example Predictions
-
-- `"This movie was amazing and unforgettable"` → 👍 Positive  
-- `"This was a terrible boring film"` → 👎 Negative  
-- `"The movie was okay but too long"` → 👎 Negative  
-
----
-
-## 🔥 Most Important Words
-
-### Positive words:
-`great`, `excellent`, `amazing`, `perfect`, `love`, `wonderful`
-
-### Negative words:
-`worst`, `bad`, `boring`, `awful`, `terrible`, `waste`
-
----
-
-## 🛠️ Tech Stack
-- Python 🐍
-- Pandas
-- NumPy
-- Scikit-learn
-
----
 
 ## 📌 Summary
 This project demonstrates a full NLP pipeline using classical Machine Learning:
