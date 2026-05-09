@@ -6,7 +6,7 @@ from numpy.linalg import norm
 # STEP 1: LOAD DATA
 # =========================
 
-with open(r"C:\Users\Charl\Desktop\tiny_glove.json", "r") as f:
+with open(r"._datasets\tiny_glove.json", "r") as f:
     glove = json.load(f)
 
 print("Vocabulary size:", len(glove))
