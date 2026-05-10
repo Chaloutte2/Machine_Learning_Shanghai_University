@@ -1,4 +1,3 @@
-# Machine_Learning_Shanghai_University
 # 🤖 Machine Learning 
 
 ## 📚 Overview
