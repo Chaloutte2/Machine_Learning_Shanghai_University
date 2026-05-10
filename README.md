@@ -4,8 +4,6 @@
 
 This repository contains multiple **Machine Learning and NLP projects** developed as part of academic practice at Shanghai University.
 
-The main focus is **Sentiment Analysis on movie reviews**, comparing:
-
 - Classical Machine Learning approaches (TF-IDF + Logistic Regression)
 - Deep Learning / Transformer models (BERT, RoBERTa, DistilBERT)
 - Model evaluation and comparison
